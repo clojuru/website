@@ -1,0 +1,11 @@
+baseURL = "https://cloju.ru/"
+languageCode = "en-us"
+title = "Clojuru — Russian Clojure Conference"
+theme = "novela"
+contentdir = "content_2019"
+publishdir = "public/2019"
+
+[social]
+  twitter = "https://twitter.com/ClojuRu"
+  facebook = "https://www.facebook.com/clojuru.moscow.9"
+  instagram = "https//instagram.com/clojuru"

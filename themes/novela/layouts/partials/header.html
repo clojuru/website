@@ -1,0 +1,32 @@
+<Section class="section">
+  <div class="nav-container">
+    <a class="logo-link" href="/">
+      {{ partial "icons/ui/logo.html" . }}
+      <span class="header-hidden">Navigate back to the homepage</span>
+    </a>
+    <div class="nav-controls">
+      <!-- <button id="copyButton" class="icon&#45;wrapper"> -->
+      <!--   {{ partial "icons/ui/link.html" . }} -->
+      <!--   <div id="toolTip" class="tool&#45;tip " > -->
+      <!--       copied -->
+      <!--   </div> -->
+      <!--   <input id="copyText" style="opacity: 0;" type="text" class="tool&#45;tip " /> -->
+      <!-- </button> -->
+
+      <!-- <button id="themeColorButton" class="icon&#45;wrapper">  -->
+      <!--   <div id="sunRays" class="sun&#45;rays"></div> -->
+      <!--   <div id="moonOrSun" class="moon&#45;or&#45;sun"></div> -->
+      <!--   <div id="moonMask" class="moon&#45;mask"></div> -->
+      <!-- </button> -->
+    </div>
+</div>
+</Section>
+
+{{ $script := resources.Get "js/toggleLogos.js" }}
+<script src="{{ $script.RelPermalink }}"></script>
+
+{{ $script := resources.Get "js/toggleColors.js" }}
+<script src="{{ $script.RelPermalink }}"></script>
+
+{{ $script := resources.Get "js/copyUrl.js" }}
+<script src="{{ $script.RelPermalink }}"></script>

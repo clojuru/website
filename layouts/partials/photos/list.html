@@ -1,0 +1,21 @@
+<div class="heading-container">
+  <h1 class="">Photos</h1>
+</div>
+
+<section class="section nartrow" style="margin-top: 100px; margin-bottom: 100px">
+
+  <div id="articlesList" class="articles-list-container show-details">
+
+    {{ $pages := (where .Site.RegularPages "Type" "photos") }}
+
+    {{ range ($pages.GroupByParam "row") }}
+
+    <div class="post-row {{ if not (modBool .Key 2) }} post-row-alt {{ end }}">
+      {{ range .Pages.ByParam "order" }}
+      {{ partial "photos/photo.html" . }}
+      {{ end }}
+    </div>
+
+    {{ end }}
+  </div>
+</section>

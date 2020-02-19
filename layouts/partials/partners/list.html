@@ -1,0 +1,15 @@
+<div class="heading-container">
+  <h1 class="">Partners</h1>
+</div>
+
+<section class="section nartrow" style="margin-top: 100px; margin-bottom: 100px;">
+  <div id="articleList" class="articles-list-container show-details articles-list-container-alt">
+
+    {{ $pages := (where .Site.RegularPages "Type" "partners") }}
+
+    {{ range $pages.ByParam "order" }}
+      {{ partial "partners/partner.html" . }}
+    {{ end }}
+
+  </div>
+</section>

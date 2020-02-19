@@ -1,0 +1,27 @@
+#logo-desktop{
+    .change-fill{
+        fill: var(--primary);
+    }
+}
+
+#logo-mobile{
+    path{
+        fill: var(--primary);
+    }
+}
+
+@media screen and (max-width: 735px){
+    .Logo__Desktop {
+        display: none;
+    }
+    .Logo__Mobile{
+        display: block;
+    }
+}
+
+.year-2019 {
+  font-size: 60px;
+  font-weight: bold;
+  vertical-align: top;
+  color: #1E2ABA;
+}

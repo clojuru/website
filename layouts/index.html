@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+{{ partial "articles/hero.html" . }}
+
+{{ .Content }}
+
+{{ partial "photos/list.html" . }}
+{{ partial "talks/list.html" . }}
+{{ partial "partners/list.html" . }}
+
+{{ end }}

@@ -1,0 +1,21 @@
+<div class="post-row">
+  <a href="{{ .Params.Link }}" class="article-link" id="article-link-bigger" target="_blank">
+    <div class="article-data-outer">
+      <div class="image-container">
+        <img src="{{ .Params.Hero }}" class="article-image">
+      </div>
+      <div class="article-data">
+        <h2 class="article-title">
+          {{ .Params.Author }}
+        </h2>
+        <div class="article-excerpt">
+          {{ .Content }}
+        </div>
+        <div class="article-metadata">
+          {{ .Params.Duration }}
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
