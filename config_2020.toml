@@ -5,6 +5,9 @@ theme = "novela"
 contentdir = "content_2020"
 publishdir = "public"
 
+[params]
+  year = 2020
+
 [social]
   twitter = "https://twitter.com/ClojuRu"
   facebook = "https://www.facebook.com/clojuru.moscow.9"
